@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rcmangnale/Assignment-by-Rahul-Taneja-task-.git"
+    "url": "https://github.com/rcmangnale/Assignment"
   },
   "author": "Rameshwar Mangnale",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rcmangnale/Assignment-by-Rahul-Taneja-task-/issues"
+    "url": "https://github.com/rcmangnale/Assignment/issues"
   },
-  "homepage": "https://github.com/rcmangnale/Assignment-by-Rahul-Taneja-task-#readme",
+  "homepage": "https://github.com/rcmangnale/Assignment#readme",
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.2",
