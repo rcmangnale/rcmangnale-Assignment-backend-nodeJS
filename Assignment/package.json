@@ -1,0 +1,25 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "description": "This is Task by Rahul Taneja",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "dev" : "nodemon src/app.js -e js,hbs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcmangnale/Assignment-by-Rahul-Taneja-task-.git"
+  },
+  "author": "Rameshwar Mangnale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcmangnale/Assignment-by-Rahul-Taneja-task-/issues"
+  },
+  "homepage": "https://github.com/rcmangnale/Assignment-by-Rahul-Taneja-task-#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "mongoose": "^6.0.10"
+  }
+}

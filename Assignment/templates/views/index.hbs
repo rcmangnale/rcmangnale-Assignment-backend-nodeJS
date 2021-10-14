@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    {{>navbar}}
+   
+<h2>
+  <u> Register form </u>
+</h2>
+<div id="container">
+  <div id="box">
+    <center>
+    <form action="/registration" method="post">
+        <input class="text" type="text" name="Fullname" placeholder="Fullname" required="">
+        <input class="text" type="text" name="Username" placeholder="Username" required="">
+        <input class="text" type="text" name="Mobile No." placeholder="Mobile no" required="">
+         <input class="text email" type="email" name="email" placeholder="Email" required="">
+		<input class="text" type="password" name="password" placeholder="Password" required="">
+		<input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required="">
+						
+  <input type="submit" value="SIGNUP">
+      </center>
+  </form>
+	<p align="center"> Don't have an Account? <a href="#"> <b>Login Now!<b></a></p> 
+  </div>
+ </div>
+
+</body>
+</html>
