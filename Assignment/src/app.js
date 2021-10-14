@@ -33,9 +33,7 @@ app.get("/registration",(req, res) => {
     res.render("registration")
 });
 
-app.get("/login",(req, res) => {
-    res.render("login")
-});
+
 
 app.post("/registration",async(req, res) => {
     try {
@@ -65,6 +63,30 @@ app.post("/registration",async(req, res) => {
     }
 })
 
+
+
+app.post("/login",(req, res) => {
+  try{
+ const email =req.body.email;
+ const password =req.body.password;
+
+ const useremail = await Register.findOne({email:email})
+ res.send(useremail);
+
+ if(useremail.password === password) {
+     res.status(201).render("index");
+ }else{
+     res.send("password not matched")
+ }
+
+ console.log(`${email} and password is ${password}`)
+} catch(error) {
+    res.status(404).send("invalid Email")
+}
+})
+
 app.listen(port,()=>{
     console.log(`server is running at port no ${port}`);
 })
+
+
